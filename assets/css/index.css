@@ -1,0 +1,65 @@
+body {
+    overflow-x: hidden;
+  }
+  
+  .layui-nav a {
+    font-size: 13px !important;
+  }
+  
+  .layui-nav-img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .layui-footer {
+    font-size: 12px;
+    text-align: center;
+  }
+  
+  .layui-logo {
+    background-color: #23262e !important;
+  }
+  
+  .iconfont,
+  .layui-icon {
+    margin-right: 6px;
+  }
+  
+  .layui-icon {
+    margin-left: 15px;
+  }
+  
+  .user-info-box {
+    line-height: 70px;
+    width: 200px;
+    text-align: center;
+    user-select: none;
+  }
+  
+  .welcome {
+    font-size: 12px;
+  }
+  
+  .text-avatar {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #009688;
+    border-radius: 50%;
+    line-height: 30px;
+    text-align: center;
+  }
+  
+  #container,
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
+  
+  iframe {
+    background-color: #f2f2f2;
+  }
+  
+  .user-info-box {
+    border-bottom: 1px solid #23262e;
+  }

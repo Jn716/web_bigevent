@@ -1,0 +1,31 @@
+body {
+    padding: 15px;
+  }
+  
+  .link-detail {
+    color: blue;
+  }
+  
+  .artinfo-box {
+    padding: 20px;
+  }
+  
+  .artinfo-title {
+    text-align: center;
+  }
+  
+  .artinfo-bar {
+    font-size: 12px;
+    margin: 20px 0;
+    color: gray;
+  }
+  
+  .artinfo-bar span {
+    margin-right: 20px;
+  }
+  
+  .artinfo-cover {
+    width: 400px;
+    height: 280px;
+    margin: 15px 0;
+  }
