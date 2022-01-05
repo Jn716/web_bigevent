@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- 导入 layui 的样式 -->
+  <link rel="stylesheet" href="/assets/lib/layui/css/layui.css">
+  <!-- 导入自己的样式 -->
+  <link rel="stylesheet" href="/assets/css/user/user_avatar.css">
+</head>
+
+<body>
+  <!-- 卡片区域 -->
+  <div class="layui-card">
+    <div class="layui-card-header">更换头像</div>
+    <div class="layui-card-body">
+      <!-- 头像裁剪区域 -->
+      <!-- 第一行的图片裁剪和预览区域 -->
+      <div class="row1">
+        <!-- 图片裁剪区域 -->
+        <div class="cropper-box">
+          <!-- 这个 img 标签很重要，将来会把它初始化为裁剪区域 -->
+          <img id="image" src="/assets/images/avatar.jpg" style="width: 100%; height: 100%; object-fit: cover;" />
+        </div>
+      </div>
+
+      <!-- 第二行的按钮区域 -->
+      <div class="row2" style="justify-content: flex-start;">
+        <!-- 选择图片的文件选择框 -->
+        <input type="file" id="file" style="display: none;" accept="image/*">
+        <button type="button" class="layui-btn" id="btnChooseImg">选择图片</button>
+        <button type="button" class="layui-btn layui-btn-danger" id="btnUploadImg">上传头像</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 导入 layui 的库文件 -->
+  <script src="/assets/lib/layui/layui.all.js"></script>
+  <script src="/assets/lib/jquery.js"></script>
+  <script src="/assets/lib/axios.js"></script>
+  <script src="/assets/js/baseAPI.js"></script>
+  <script src="/assets/js/user/user_avatar.js"></script>
+</body>
+
+</html>

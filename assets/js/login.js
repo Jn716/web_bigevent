@@ -32,7 +32,7 @@ $(function () {
     //     username: $('#form.reg [name=username]').val(),
     //     password: $('#form.reg [name=password]').val()
     // }
-    axios.post('/api/reg',$(this).serialize()),then(({data:res})=> {
+    axios.post('/api/reg',$(this).serialize()).then(({data:res})=> {
         if (res.code === 0) {
             layer.msg('注册成功，请登录');
             $('#link-login').click()
@@ -52,7 +52,7 @@ $(function () {
         //     username: $('#form.reg [name=username]').val(),
         //     password: $('#form.reg [name=password]').val()
         // }
-        axios.post('/api/login',$(this).serialize()),then(({data:res})=> {
+        axios.post('/api/login',$(this).serialize()).then(({data:res})=> {
             if (res.code===0) {
                  layer.msg('登录成功!');
                  localStorage.setItem('token', res.token)
